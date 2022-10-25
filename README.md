@@ -1,4 +1,4 @@
-# SkylineGoogleMapsAppPackage
+# DataMinerGoogleMapsAppPackage
 This Application Package installs the Skyline Google Maps on your DataMiner system.
 
 It will show normal alarms for Germany. The Country France is in Major alarm state.(the filter 'Major' in the Google Maps top-left pane is enabled by default to see the alarm for France).
