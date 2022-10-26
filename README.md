@@ -1,5 +1,5 @@
 # DataMinerGoogleMapsAppPackage
-This Application Package installs the Skyline Google Maps on your DataMiner system.
+This Application Package installs the DataMiner Google Maps on your DataMiner system.
 
 It will show normal alarms for Germany. The Country France is in Major alarm state.(the filter 'Major' in the Google Maps top-left pane is enabled by default to see the alarm for France).
 
@@ -23,9 +23,9 @@ You can select the following in the top-right corner:
 
 ### Upload
 
-It will upload the Skyline Google Maps protocol and Alarm Template called 'Standard' to your DataMiner system. The Generic Dummy protocol is also uploaded.
+It will upload the DataMiner Google Maps protocol and Alarm Template called 'Standard' to your DataMiner system. The Generic Dummy protocol is also uploaded.
 
-A Visio file(Skyline Google Maps.vsdx) will also be uploaded that links to your Maps config file.
+A Visio file(DataMiner Google Maps.vsdx) will also be uploaded that links to your Maps config file.
 
 Data needed for the element will also be uploaded(CSV files).
 
@@ -33,16 +33,16 @@ Icons needed for the Visio, and Serverconfig.xml, RT_QA_Maps.xml files will also
 
 ### Create
 
-1. It will create a view 'Skyline Google Maps' below the root view.
-1. Next up is the creation of an element 'Skyline Google Maps' in above mentioned view and assigns the alarm template 'Standard' to this element.
+1. It will create a view 'DataMiner Google Maps' below the root view.
+1. Next up is the creation of an element 'DataMiner Google Maps' in above mentioned view and assigns the alarm template 'Standard' to this element.
 1. The element reads in the necessary data from it's CSV files.
 1. The table parameter 'Country alarm' at index '2'(so France) of the Country table will be set to an Major alarm.
 1. The table parameter 'Region alarm' at index '1'(Vlaanderen) of the Regions table will be set to an Major alarm.
-1. For the 'Skyline Google Maps' element, element properties('Latitude' and 'Longitude') are created and assigned with a value. If these element properties would exist on your system, then the property values are set for the 'Skyline Google Maps' element.
-1. Another element, 'Generic Dummy_ParameterCoordinates' is created from protocol 'Generic Dummy', version 1.0.2.3(also available on catalog.dataminer.services) and Dummy Parameter 01 & Dummy Parameter 02 are set to Latitude and Longitude values. This element is added below the 'Skyline Google Maps' view.
-1. The 'Skyline Google Maps' element is added to a service 'Skyline Google Maps Service' in the 'Skyline Google Maps' view.
-1. The RT_QA_Maps file is updated with the dma-id and element-id of the element(created in step 2) of your DataMiner system. For the 'Individual Element Markers' layer, the id attribute of the element tag is set to the correct dmaid/elementid of the 'Skyline Google Maps' element. For SourceInfo --> 'Element Parameters', the id attribute of the 'ViewFilter' tag is updated.
-1. The Visio file is assigned to the Skyline Google Maps view.
+1. For the 'DataMiner Google Maps' element, element properties('Latitude' and 'Longitude') are created and assigned with a value. If these element properties would exist on your system, then the property values are set for the 'DataMiner Google Maps' element.
+1. Another element, 'Generic Dummy_ParameterCoordinates' is created from protocol 'Generic Dummy', version 1.0.2.3(also available on catalog.dataminer.services) and Dummy Parameter 01 & Dummy Parameter 02 are set to Latitude and Longitude values. This element is added below the 'DataMiner Google Maps' view.
+1. The 'DataMiner Google Maps' element is added to a service 'DataMiner Google Maps Service' in the 'DataMiner Google Maps' view.
+1. The RT_QA_Maps file is updated with the dma-id and element-id of the element(created in step 2) of your DataMiner system. For the 'Individual Element Markers' layer, the id attribute of the element tag is set to the correct dmaid/elementid of the 'DataMiner Google Maps' element. For SourceInfo --> 'Element Parameters', the id attribute of the 'ViewFilter' tag is updated.
+1. The Visio file is assigned to the DataMiner Google Maps view.
 
 ### Result
 
